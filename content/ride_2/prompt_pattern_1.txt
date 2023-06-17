@@ -1,0 +1,52 @@
+Patterns in our prompts can tap into
+powerful behavior within the large language model. It's trained on all these
+different patterns. And it gets really good at using
+the patterns in our language and our prompt to decide
+what it's going to do. So one of the important things that we're
+going to learn about is the concept of a prompt pattern. A pattern for structuring the words and
+the statements in your prompt. So what is a prompt pattern? A prompt pattern is a way that we document
+a certain structure of phrases and statements in order to solve a particular
+problem in with a large language model. So we'd like to interact with
+a large language model and we'd like to solve a particular problem. And so a prompt pattern is basically
+a way of structuring our statements, a pattern for structuring our statements
+to use the large language model to solve that particular problem. So what would be an example of this? Well, let's imagine that
+we wanted to consistently generate the words lamb,
+its fleece was as white as snow. Well, a pattern could be
+any time you need lamb, it's fleece was white as snow you can
+write the statement Mary had a little, you will very consistently get lamb, it's
+fleece was as white as snow as the output. And so for example, we can go and
+we can rerun this lamb, it's fleece was as white as snow. We get more or less behavior. But if we want to consistently
+get those next words generated, we can do it over and over and
+over again through Mary had a little, it gives us some control over the output. It gives us a consistent
+somewhat behavior. Now it's not perfectly consistent,
+there's variations in the output. And we've seen in all of these examples,
+we've got variation in what happened, but we did get some consistency
+in the behavior. So what a prompt pattern is,
+it's a way for us to document and talk about certain structures of our
+language, series of statements and wording that then will help us
+solve some particular problem. If the problem that we need to solve is we
+need to get lamb it's fleece as white as snow as the next several
+words that are produced. Then this is the pattern we use. Now in many cases,
+we might have specific words we want. For example, we may want the large
+language model to tell us yes or no. We may want it to summarize something,
+we may want it to ask us questions. We may want it to always include
+certain things in its output. All of these things are problems
+that you might want to solve. We might want to know how do we make
+sure it always includes these things and its output? How do we make sure that its output is
+always formatted in a particular way? How do we try to make sure or get more consistent behavior
+on only getting a yes or a no. These are types of problems that you might
+want to solve by changing the pattern of our prompt basically
+the structure of our prompt. Now going back to our intuitive
+sort of understanding of prompts, you can see why thinking about it in terms
+of power patterns is powerful because patterns are basically that are in
+our prompt are tapping into things that the large language
+model has been trained on. It's been trained to predict
+the next word over and over and it's learned certain
+patterns from the words. And if we can format our prompt in
+a way that taps into those patterns that's learned, we're more likely
+to get the behavior we want and solve that particular problem. So we document the pattern and the structure of our prompt in order to
+solve a particular problem that we need or generate a particular behavior that
+we need for the large language model. So we're going to go through in a series
+of lectures throughout this course of specific prompt patterns that
+we can use within the context of large language models to
+solve important problems.
