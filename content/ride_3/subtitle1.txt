@@ -1,0 +1,129 @@
+One of the most important
+things we can do in a prompt is provide the large language model with information that it
+doesn't have access to. Large language models
+are going to be trained up to some
+point and then there's going to be a cut-off and
+they don't know what's happened after that cutoff. In addition, they don't know things that aren't in
+their training set. It may be trained
+on a lot of data, but it may not have access to data sources that
+you want to use. If you're a business
+for example, there's probably lots
+of private data sources that you would like
+to reason about. You have your own documents, you have your own databases, you have all things that
+you would like to pull information in from in
+order to reason about. How do you do that if the large language model wasn't trained with
+that information? Well, to illustrate
+how you do this, I'm going to go back
+to an example that I provided earlier when I was
+talking about randomness. I'm going to go back
+and I'm going to ask a question that I asked earlier, which is how many birds
+are outside my house? Now, the large language
+model wasn't trained on information about
+birds outside my house. It has no idea
+where my house is. It's lacking information that it needs in order to reason. It tells us as a language model, I don't have the ability to
+perceive the physical world, so I'm unable to know what's happening outside your house. How do we solve this problem? Well, we give it information it needs in order to
+perform its reasoning. How do we do that? We just
+put it into the prompt. Anytime we want to
+go and introduce new information to the large
+language model that it didn't have access to
+when it was trained, all we have to do is
+put it into the prompt. Here's what I'm going
+to do right here, I'm going to say
+historical observations of average birds outside my
+house on a random day. Then I'm going to
+give it some data. I'm going to say January was
+120 birds on a random day. February was 150 birds, March was 210 birds, April was 408 birds. It's March. Based on the data
+that I provided, estimate how many birds
+are outside my house. Now you see I've done something. I've given it information that it didn't have
+access to before. It couldn't look
+outside my house, didn't know where my house was. It tried to suggest ways
+that I could get there, but it didn't have the
+fundamental data that it needed. That's really what it was
+trying to tell me was like, hey, I can't see you
+outside your house. I don't have that data.
+I can't help you. All we have to do is up
+front in the prompt, we give it the data. Now you can imagine you
+can do this with anything. You could take
+documents if you have private documents that
+you want to reason about. Now first, makes sure
+that you are okay sending that data to whoever you're using their
+large language model, or if you have some large
+language model running locally, but if you have documents
+that you're okay sending, you can take the text of those documents and put it into the start of
+the prompt and say, here's the information
+you didn't know. Now here's my question
+about that information. You can use the prompt to
+introduce information. I really want to emphasize this because a lot of
+what's going to be developed around large
+language models is going to be taking new
+information sources, information about your travel, your account with some company, some other document
+that you need, and putting it into a prompt for a large language model so
+that it can reason about it. More than likely, lots of large language models
+are going to be seeing your information
+in the future. This is how they're going to take is they're going to take information that
+it's going to be aggregated into a
+prompt of some kind. There's going to be
+questions asked or formatting or other things done. When I go through and I provided historical observations
+of the average birds, now it can go and answer. Now it goes and it says, well, based on the historical
+observations you provided, the average number of
+birds observed outside your house in March is 210. Before it said, hey, there's
+no way I can answer it. Now it still provides additional
+language around this, trying to give some
+bounds on its answer, but it's given us reasoning now based on the data we
+provide it and we can take it further. I also want to just point
+out an important thing is we always want to provide it enough information to
+reason effectively. It can't see what's around us, it can't see the context. It's really important
+that we provided enough information to
+make sound decisions. For example, if I have some hidden assumptions that are really important to know, it needs to get
+those in the prompt in addition to the
+data like numbers, it needs to know the rules
+of the game, special things, whatever's important
+for reasoning. It could be not only the data, but it could be all
+rules that are built into how my organization works, or how my life works or whatever it is that it
+needs to know about. I'm going to give
+you an example. I'm going to change
+up this prompt. I'm going to say my house
+is covered by a glass dome. No animals can go in or out. All animals live forever
+inside the glass dome. Now this is an assumption, this is something that if the language model
+doesn't know this, there's no way it will be
+able to accurately predict. But with this assumption now, it completely changes the
+game on reasoning because it makes it so that it's clear some hidden
+fundamental rules. Then I go in and give
+it the same data. But I've changed it
+up, I've said it's always the same number of birds. Then I ask based on that data, estimate how many birds
+are outside my house. It says based on the new
+information you provided, appears that the total
+number of birds outside your house remains
+constant over time. It then goes on and says, you mentioned that
+all animals live forever inside the glass dome. Given these conditions,
+the total number of birds would remain the
+same throughout the year. It gives 120 is the answer
+in multiple places. Now, one important
+thing about this, giving it information that would not align with what
+it was trained on. Animals don't live forever. We don't have glass
+domes over our house. There's not going to always be the exact number
+of probably in and out or the inability for
+things to leave or come. We're not going to have
+these sort of weird rules that I've put in place. If we just relied on it
+to reason without them, it's not going to necessarily
+get the right answer. If we have these things that are different from the way
+things are normally done, we have to introduce them as new information and the prompt. All of this information
+up here at the top, this is me putting new information into the
+large language model. We don't go and retrain. We don't go and do some weird
+thing behind the scenes, we just put it into the prompt. Then we ask our question, or we ask for our output or give it the instruction
+that we're looking for. Now if you think about how search engines are probably
+going to work in the future, is they're going
+to go and search, pull documents back together, put them into a prompt to the large language
+model and then give your original question and then answer based on the questions. A lot of new applications are going to be
+based on going and searching databases for
+possibly relevant documents or bits of information, putting it in together
+into the prompt and then asking the question are
+asking for the output. An important piece of this
+is going to be pulling in information in order
+to put it in the prompt. What we're doing is we are
+introducing new language or new information into
+the large language model. We're doing it by putting it
+directly into the prompt. This is one of the things
+you'll always want to do whenever you
+want to reason on new information that is not something that the large language model would
+have been trained on.

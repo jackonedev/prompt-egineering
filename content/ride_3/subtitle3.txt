@@ -1,0 +1,231 @@
+Prompts aren't just a one-off that you give to the
+large language model. You shouldn't just
+think of them as questions or a single statement. What are the most powerful
+ways of working with a large language
+model is to think about a prompt as
+a conversation. In fact, you can have a single prompt that represents
+an entire conversation. In fact, a lot of
+what we're going to see when we're working
+with a tool like ChatGPT is that it's
+actually turning all of our interactions
+into one big prompt that it's sending to the
+large language model. But I wanted to just
+take back for a second and take us back a
+few steps and think about why thinking of
+having a conversation with a large language model is so important as opposed
+to thinking about asking a question and
+getting the answer or giving an instruction
+and getting a result. Conversations are all about refining either our
+understanding to build some shared understanding or to interact together in
+order to solve a problem. When we start working
+with conversations, it's all about refinement
+of continually guiding and moving through some problem or some space in order to
+reach a particular goal. When we just think of a one-off, we have to solve everything right now right in this moment. We have to design one prompt that works and
+everything is right. But if we think about
+a conversation, we can go through an
+iterative refinement process. Now, what does that mean,
+iterative refinement? Well, if we think about a large language model
+like ChatGPT as a tool, you can imagine
+Michelangelo has been given a new hammer
+and he's going to go up to a piece of stone and
+he's going to start carving that stone into some
+beautiful sculpture like the pia tar, daveat or whatever the sculpture is that he's going to create. He walks up with a
+hammer and he whacks the sculpture with his hammer
+and a piece falls off. He looked, he whacks
+the stone with a hammer and a piece falls off and he
+looks at what he's gotten. He said, this is a terrible sculpture and he throws the hammer
+down on the ground. He says he didn't do a
+good job and he walks off. No, that's not what happens. What does Michelangelo do? He takes the hammer and he
+hits the rock over and over, refining and shaping
+and sculpting. Over time he iteratively refines that rock until
+it's a beautiful sculpture. A lot of what we need to do with large language
+models is thinking in that mindset of it's not about getting the perfect answer
+right now from this prompt, it's about going through an entire conversation with
+the large language model that may be involved
+in a series of prompts and the outputs
+from a series of prompts. We'll talk about how these
+things are represented later. But basically having
+a conversation with a large language model
+in order to produce an output that we
+want or to produce some other interesting product. Now, I'm going to give
+you an example of this. I'm going to imagine and show you the power
+of a conversation in the context of a
+educational experience. I'm going to say to ChatGPT, I want you to help me explore a virtual lab for
+building robots. The lab as a university, help introduce me to the lab and tell me
+what I can do here. This is a virtual
+lab in a university. All I've done is given it this initial seed of
+the conversation. ChatGPT says
+certainly welcome to the virtual lab for building
+robots at our university. The lab provides an immersive hands-on learning experience. It goes on and it tells me, here are some of the things
+you can do in this lab, design robots, test robots, program robots,
+collaborate with others. I then say, I'm going to
+continue the conversation, but I'm going to continue
+the conversation just assuming that this lab exists and then I can
+interact with it. I say, can we design
+a robot together? ChatGPT says, absolutely, I would love to collaborate
+with you and design a robot. To get started, we can
+follow these general steps, define the purpose and function, brainstorm and design concepts, determine the necessary
+components, build and test. It goes on to tell me
+a number of steps. Then I follow up in the
+conversation with great, can you guide me through each of these steps one at a time? At the end, I would
+like to be able to 3D print parts to
+assemble my robot, have a circuit diagram and have code that I can run
+to control the robot. Can you help me with that? This is an interesting aspect. I'm having a conversation, but I'm also engaging the
+large language model. I'm engaged in it to help
+guide the conversation and help figure out how to solve the problem that
+I'm interested in. It says, sure, I'd
+be happy to guide you through each
+step of the process. Here's a detailed breakdown
+on the steps that we can take to design and
+build a robot together. Step 1, define the purpose
+and function, two, brainstorm concepts, determine the
+necessary components and it goes on to tell
+me a bunch of things. I say, okay, let's do step 1 so I'm continuing
+the conversation. I want one of those robots that can follow a line on the floor. I've seen these things. These
+are common at universities. They'll build them.
+You put it on the floor and the
+robot will follow some line like a piece of tape that's on the floor or
+something that's painted. It says, great, following
+a line on the floor is a common tasks for
+robots and there are many ways to approach
+this problem. Here are some questions
+to consider as we define the purpose and function of our line
+following robot. What will be the primary use? How fast do we want the
+robot to follow a line? How complex do we want
+the following to be? What sensors do we want to use? I just tell it, hey, I'm not really sure. Could you make some
+sensible choices for me in all of these things? ChatGPT says sure, based on my experience, I can make some
+suggestions and it gives it its purpose and function. It's going to be for
+educational purposes, speed and distance, moderate speed that
+is easy to track, such as 10-15
+centimeters a second. Complexity will design
+it to navigate through a simple track with
+straight lines and gradual turns and sensor choice, we can use infrared sensors. That's a pretty good thing. Now notice, I don't really
+know a lot about this domain. I know about the
+code piece of it, but I don't know all
+about the other one. I'm just engaging it in a conversation to get something
+out of it that I want. Remember, I want
+to build a robot. I want to build 3D print parts. I want to be able to
+assemble circuits for it, and I want to be able
+to run code on it. Then I said, well,
+what do we do next? Just tell me the
+very next steps and nothing else and it
+says the next step is brainstorm concepts and it says we can use 3D
+models of the robot. Now it sounds like I've
+reached a dead end, Like how am I going to
+do 3D models with it? And so I just ask it, how do we do this
+via chat because I'm trying to refine
+what's going on here. I don't want to just assume
+I'm stuck. I can't get out. I want to keep
+refining and moving the conversation to
+try to get to my goal. It says, since we
+are communicating through a text-based chat, we can use shared documents
+or diagrams to collaborate. We can use Google Drive or
+Dropbox and then as mentioned, different tools like Sketchpad
+or Microsoft Whiteboard and I just realized
+that seems tricky. I don't know how to get around
+that and then I realized, I have some knowledge
+of that vein. I know that 3D
+printers use G-code. This is something that the
+instructions are sent to it, so I just say can you show me sample G-code that I could give a 3D printer to print
+four wheels for a robot. I'm trying to steer around this roadblock and
+then it says yes, and it goes and gives
+me some G-code, which I look at and I have enough domain knowledge
+from this to think that I'm skeptical that this is real G-code and I don't
+really even see some wheels. Then I go, can you explain where the wheel shape
+is created in this G-code. I've gone down a rabbit
+hole now where I seem to be hitting a
+roadblock after roadblock. But I'm continuing
+the conversation. I'm still problem-solving and thinking about how do
+I get around this? And it says, I apologize
+for the confusion, but the example of G-code
+I provided earlier is just a sample start and does not have any instructions
+for creating the shape of the wheels. Now, I then say, could you create sample
+Python code that I can run to create
+an STL file that has four inch tall wheels with a 0.1 inch hole in the
+middle for an axle. What I'm doing here is I'm
+trying to come up with additional tasks that it could do that would help
+me solve my problem. Now, the way that I worded it, the way I saw it out, solving the problem
+the first time didn't work and I keep
+hitting roadblocks. What I'm doing is I'm retrying
+with a different task that would be useful to
+me to solve my problem. I'm thinking about this
+as almost like a tree, like I've reached
+a critical point and I've tried to go
+in one direction, but its told me I
+can't do it that way or it's giving me
+an erroneous output. Now I'm trying a slightly
+different tact to go and solve my problem that'll have still
+help me get there. This one is one
+that is able to do, an STL files are
+basically files that you can use to describe the geometry of some
+3D shape and then basically give them to
+specialized software which can then send
+them to a 3D printer to be printed into a shape. This one, it actually is
+able to go and create what looks like STL code and I didn't actually
+try to print it. I'll be fully honest, I'm
+just wanting to illustrate the conversational
+aspect of this. But it certainly has things
+that look like wheels in the output that it's producing. It's looking like it
+produces something that's probably going to give me
+something that I can 3D print. Then I say, Well, I'd like to pick electronics from my robot. Can you tell me
+what components I need and how to
+wire them together? And it starts giving
+me information. I need a microcontroller board, I need a motor driver board, infrared lines sensors and surprisingly that it
+actually tries to generate an image which is
+obviously not possible in it at this point
+with what I'm using. But it still tries to do it. But it gets the image and it's broken again and so I
+have to think about how do I get around
+this problem that it can't generate image
+because I'd like to help it pick electronics for me and show me how to wire
+them together with a diagram. What I do at this
+point, is I say, well, I know there's this other
+tool that uses text as n, but it's called Graphviz. I ask it to create an
+input for that tool that can visualize the circuit
+diagram for this tool, or at least do a rough
+approximation of it. Then it can do it and
+it generates for me a circuit diagram for
+the robot and I continue this conversation for a very
+long time trying to iterate and improve the definition
+in the circuit diagram. Picking different components, generating source code
+to run on the robot. It had picked an Arduino
+component and then had generated code to
+run on the Arduino. Then I even took it to the point where I went all the
+way down and I said, Hey, we've covered
+a lot of concepts. Now this is one of the
+things that's really powerful about the
+conversation is you can take the conversation a lot
+of directions and as you realize you'd like
+additional things, you can ask for them. In this case I said,
+Hey, there's a summarize the main topics that we've covered and it was
+able to do that, gives me a summary of
+all the main topics and then I did something
+interesting and I said, well, let's take
+it even further. I've learned a lot by going
+through this design process. Now I haven't actually
+gotten something that I could probably build
+a robot yet with. They interacted more,
+I probably could, but actually ask it to quiz me from the
+electronics questions and it's able to do that. What you can see
+here is a lot of the power of these large
+language models comes from not just thinking
+of them as a one-off, like I ask it a question, it gave me a response that wasn't very good or it
+couldn't answer it. We should always be thinking
+about how do we take the response and use it to inform a next question for the conversation or a next statement for
+the conversation, or how do we give it
+feedback on what it did well or what
+it didn't do well. That's how we get the
+really useful products. That's how we go
+from thinking of it as a hammer where
+we strike once it doesn't give us what as
+we want and we throw on the floor that mindset is wrong. We want to go to the
+mindset of it's a hammer. We're going to have
+to chisel away at the rock to get the really
+beautiful outputs of it. If we're not continuing
+the conversation, continually asking
+follow-up questions, problem-solve in
+the conversation and trying to move
+around roadblocks, taking what we're being
+given and giving it different shapes and formats
+that may be useful to us. We're really missing
+the underlying power and capabilities of these
+large language models.

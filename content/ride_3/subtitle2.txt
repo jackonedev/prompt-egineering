@@ -1,0 +1,125 @@
+A really critical thing to understand is that a
+prompt is fundamentally the input that we have
+into the model and we have a limitation on the size of the prompt
+that we can create. We can't go and create a
+prompt of unlimited size. Every single large language
+model is going to have some fundamental limit on how much we can put into our
+prompt and send to it. This is an important thing
+to note because it has a lot of ramifications on
+thinking about prompt design. I'm going to show you a
+quick example of this with ChatGPT and GPT-3.5. I'm going to paste in
+the Wikipedia article that's related to the
+French Revolution. I've pasted it on a huge
+amount of texts from the French Revolution that's
+described in Wikipedia. What is ChatGPT said? It says, "Well, the message
+you submitted was too long. Please reload the conversation and submit something shorter." Now this shows you
+an important point. We can't just give it
+unlimited information. Now, if we go back and we think about some of the things
+we've talked about, some of the
+dimensions of prompt, one of the ways that we can
+use a prompt is to introduce new information that ChatGPT or another large language
+model wasn't trained on. If we want to go and introduce
+new information to it, we have to be aware
+that there's a limit to the amount of information we're going to be able to
+give to it at once. We may have all new information that we'd like to
+give to ChatGPT, but we can't just
+dump it all in at once and then say now
+start reasoning on this. That's not the way it works. One of the goals that we have as users is to try
+to select and use only the information that
+we need in order to perform the task that we're asking
+ChatGPT to perform. We can't just go
+and dump everything under the sun in there and say, hey, ChatGPT, figure it out. We can go in and dumping a lot and depending
+on the model, we may be able to
+do more or less. But to some degree, we have to be editors,
+we're content editors. We are editing the context of information and
+we have a budget. We can't just go and dump unlimited amounts
+and we can think of it. It basically is like
+you're trying to create a paper and you have a
+page limit for your paper, or you have a word limit for an article that
+you're writing, you can't just go in and
+dump things arbitrarily. What do we do? Well, one, we have to think about what is the most important information
+to actually provide. Let's say, for example, that we really care
+about October 5th, 1789. Well, if that's the case, well, that's what we want to paste in for ChatGPT to reason about. Then we could go and we can say, what happened on October 5th? Then it would go and tell us what happened on October 5th. But now if we ask it
+a question that is outside of the scope of October 5th and something
+it wasn't trained on, now in this case,
+it was probably trained on the
+information regarding the French Revolution
+because obviously that was before 2021. But if we add new information
+we wanted to incorporate, we have to think about how do we put that information
+into our budget? What are some ways
+that we can do that? How can we take large amounts of information and try to
+get it into our budget? Well, one, we can be selective
+about what we include. We can basically
+outside of ChatGPT, go and run some type
+of query or filter. We can go and select what pieces of information are going to
+be relevant to the task. There's lots of ways of
+doing this and I'm not going to go into all of
+them. We can have a filter. We can say this type of
+information is not relevant, remove it before we
+provide it to ChatGPT. Another thing that
+we can do is we can actually go and have
+that information summarized in a way
+that we think will preserve what's needed
+to reason about it. For example, we might say, well, maybe we can't paste in all of the information related
+to it but we could say, we're going to take this and
+summarize each paragraph, summarize this information
+in one sentence. Then we would get
+some type of summary. Now this is slightly
+shorter than the original, so we have now a one-sentence
+summary of what happened. We could try to give
+it a word budget. One way we can do it is
+we can actually take all the different pieces
+of information and we can ask ChatGPT or another large
+language model to summarize that information for
+us and then we can take that summary
+and reuse it later. We can put together several
+summaries, for example. Now, this only works if we make sure that the way
+that we summarize or if we make sure that
+the way that we filter preserves the information that's needed for whatever task
+we're going to ask for. We might go through, we
+could also go and say, we said summarize this
+information in one sentence. We instead, we could say, summarize this information
+in one sentence. I'm just going to
+preserving information about numbers of people. Then we get a summary that preserves the information
+about numbers. Now if you look at
+the original summary, we see up here it didn't
+keep the number of people. If that was something important that we needed to reason about, then we would have lost that, and so if we had summarized
+in that way and then use that information to do some reasoning that required
+the number of people, obviously we've
+lost what we need. Down here we've asked
+it to summarize, but we've asked it to
+summarize in order to keep certain information or in order to accomplish a particular task. We did it by saying, basically, summarize this information
+in one sentence, preserving information
+about numbers of people. We could have also gone
+and asked ChatGPT, preserving information needed to reason about the
+population or to reason about how many people were in the resistance or
+in the National Guard, we could have given context. One of the things we have
+to be cognizant of is this budget on the size of our prompt is going to be a fundamental
+limitation that we are always trying to work around. Now, as large language
+models get bigger, they will probably reach a size with many practical tasks, particularly when
+we are directly manually interacting with
+the large language model, that size doesn't really
+matter because we can just copy and paste 50 pages of text into the model
+and ask it to provide us information out of there or
+perform a task based on it. But if you can think about how much information we're
+dealing with on a daily basis, there are probably going to be different types of tasks where there's going to be
+so much information, we can't dump it all in at once. When we get into those
+types of situations, we have to think about
+either querying and getting a subset of information
+like only the documents, only the parts of documents
+that are relevant. Two, we have to think
+about filtering. How do we remove information
+that's extraneous? Three, we have to
+think about how do we summarize or compress that information before we give it to the large language model. One of the ways that
+we can do that, as we've just seen, is we can actually
+give chunks of information to the
+large language model and then ask it to essentially summarize
+or compress it for us in order to later
+use it for reasoning. We can also go and we can say, summarize or compress
+this information in order to accomplish a particular task or in order to preserve these aspects
+of the information. That can help us to
+create summaries or essentially condensed
+versions of the information that preserve
+the important pieces. This can be a powerful
+technique when we go and began needing to reason on larger and larger
+amounts of information.

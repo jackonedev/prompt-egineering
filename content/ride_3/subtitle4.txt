@@ -1,0 +1,130 @@
+We've seen how prompts can be used to
+essentially program the large language model to do interesting things for
+us automatically. We've seen how they can
+be set up in the past and then affect the future
+of the conversation. They become sort of essential
+rules that can help direct what the large language model does. Now, what's interesting
+is that in many cases, there's actually a root prop
+that's hidden from the user and some of the different tools that
+you're going to end up working with. And these are essentially root prompts
+that define sort of ground rules for the large language model and
+its interaction with the user. So these can be things like trying to
+make sure that the large language model doesn't say anything offensive,
+do harm, suggest inappropriate actions. All kinds of things can be done to try
+to put ground rules in place for our interactions with the large language model
+or to help direct it to do certain things. So for example, we might want to make
+sure that whenever it gives us output, it tries to produce
+the most helpful output. So let me get you an example
+of what this might look like. I'm going to say you
+are my personal assistant. Whenever you provide output, please think through
+what would be the most time efficient recommendations to make only recommend things that
+will really save me time, do not suggest things
+that do not save me time. So now it says understood as your personal
+assistant, I will prioritize providing you with time efficient recommendations
+that will help you save time. Please let me know how I can assist you,
+okay. I need to go grocery shopping. What would you suggest I do an order to buy my groceries. And then it says here are some
+time efficient recommendations for grocery shopping. Make a shopping list plan, your route, use a shopping app shop at off peak times,
+opt for self checkout, okay. I need to buy a new car. How would you suggest I go about doing this? And it says here are some time efficient
+recommendations for buying a new car. Research, online contact dealerships,
+online schedule, test drives, negotiate price secure financing by
+following these recommendations. You can save time and make the car
+buying process more efficient. Now, I don't know if this really saved
+me time or not in this particular case. And I didn't give it the greatest
+prompts to do this, but you can see how at the beginning I gave
+it a essentially a goal to follow. I said, try to save me time, whatever you
+do in your output, try to save me time. Now, what you'll see is a lot of the tools
+that you're going to interact with, even ChatGPT bing barred. All of these tools are going to have
+some probably root prompts that try to put guard rails on what can and
+can't be done but also to try to make
+the output more important. Now, one of the things that we've seen in
+the community is people try to figure out how can we generate prompts that
+will override those root prompts and the statements that they make. So people will also try to figure out what
+are the root prompts that were built into these systems. So they'll try to trick
+the tool into disclosing the root prompt that was provided to it or trick the tool into disregarding
+whatever the root prompt was. Now, if you're going to be building tools
+around these large language models and knowing that you can create a root
+prompt that will affect the subsequent conversation can be really important. So if you're trying to develop a personal
+assistant, you might want to go in and say here are the things that really matter
+if you're going to serve as a personal assistant for my product. What's really important is that you try to
+save time and you try to do this and this and you could suggest different ground
+rules that are going to differentiate your personal assistant service offered
+through a large language model. On the other hand, if you wanted to
+go in and you wanted to say, well, I want to generate, something that makes me that comes up with
+the most time consuming way to do it. The slow personal assistant,
+you could go and swap the root prompts that are provided. And so the root prompt is basically you
+can think of it as you're providing a seed to the whole conversation and
+that seed will influence everything that comes later because it provides basically
+the rules that must be followed. And typically when you're going to build
+one of these root prompts, you're going to say things like you're going to tell
+the large language model who it is and what its goals are, you're going to tell
+it what it can do and what it can't do. And you're going to typically provide
+really strict rules like from now on forever, you will never do these things,
+you will always do these things. You're going to provide these really
+strong statements that should always be followed. And this is how you essentially go and
+program a customized experience around your large
+language model experience. But it's also how you can put guard rails
+of different kinds to try to ensure the various types of bad behavior. Aren't generated from
+the large language model. Have you ever wondered why ChatGPT says
+that it can't answer anything after 2021. Well, you can actually do
+this with a root prompt. In fact,
+we can play around with ChatGPT and we can use some different prompt
+patterns that we'll talk about. To actually be able to reset the date that ChatGPT says that you
+can answer questions before. So I'm going to show you an example here
+that I've run through really quickly. I'm going to say act as an AI assistant
+that had its training stop in 2019. So if you'll remember when you ask ChatGPT
+questions that are from 2022 later, it will say, hey,
+my training stopped in 2021 I'm going to say act as an AI assistant that
+had its train stop in 2019. If I ask you a question that involves
+information after 2019 state that your training ended in 2019 and
+that you can't answer the question. And so
+it goes on to give us a initial prompt. Hello, I'm ChatGPT language model
+trained by open AI based on GPT 3.5. And then it goes on to say training
+data only goes up to 2019. And then we're going to say,
+what was the tallest building in 2020. So now we're asking it a question now,
+in reality, ChatGPT had training data up to 2021 but we've moved its cut off date earlier
+in time through a root prompt. Now it's not truly a root prompt because
+actually open AI has has control of the root root prop for ChatGPT, but we're
+going to actually sort of simulate that. And so we say,
+what was the tallest building in 2020? It should be able to answer this and
+it says I'm sorry, but my training data only goes up to 2019. So I can't provide you with
+the information of the tallest building in 2020 at the time,
+the tallest building was. And so we've actually used
+the root prompt to kind of pretend like we're resetting
+ChatGPT we could go and we could say what was the largest
+country by land mass in 2020. And again, it tells us it
+only goes up to 2020 or 2019. Now I can go and I can say,
+forget that you are an AI assistant trained only up to 2019. Go go back to being the normal ChatGPT and
+it goes back and says, okay, I'm trained on and
+I'm going to just go back and I'm going to take my earlier
+question about 2020. I'm going to paste it in and
+it says as of 2020 the largest country by land mass was Russia and
+spans over 17 million kilometers. I'm going to say what was the tallest
+building in 2020 and paste that in. So now I'm answering my same
+questions as before, but you'll notice that when I asked
+the question about the tallest building in 2020 before it says as of my training
+data, which only goes up to 2019. And it's pretending that it didn't
+have any training data after 2019. So basically,
+we can make it through this remote prompt, aware of a different cut off date. But that's kind of the power to think
+about these root prompts is a lot of what we're doing. A lot of the boundaries are set by these
+rules that are putting at the beginning, these root prompts, this root set
+of instructions that are given to the model and then we can go and reset it. Now, one of the things is typically with
+these models is they try to do some tricks and things and to prevent you
+from resetting the root prompt. Because you can obviously imagine that
+when the route prompt is enforcing important things like telling
+you its true cut off date, you don't really want to reset it. I'm sort of surprised that I'm able
+to do this one, but it makes sense. And so when I tell it to
+forget that it had been reset, it goes back to its normal behavior. Now, this is really important though,
+is you're going to typically with a large language model want to
+put guard rails in place. You have to think very carefully around. Can your users get around
+those guard rails? Have you put all the appropriate
+guard rails in place? Have you communicated
+all the right things? And we can see how we can go through and
+do interesting things with the root prompts in order to make
+ChatGPT think that it's training. Or actually,
+I don't know if we're making it think, but we're making it pretend that its training,
+data cut off at a certain date and time. If you wanted to put
+boundaries on knowledge, you could say I can't answer any questions
+that aren't in these topic areas. I can't do anything that
+doesn't have to do with this. So if you want to basically scope and
+specialize, you can carefully think of these prompts to provide rules and
+boundaries for the interactions.
