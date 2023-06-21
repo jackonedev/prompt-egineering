@@ -1,0 +1,103 @@
+A really simple way to improve our interactions with
+large language model like chat GPT is to use the
+question refinement pattern. This is a really simple
+idea and hopefully it'll inspire other ideas from you
+patterns that you could use. But basic idea behind this is that we watch
+chat GPT or another large language model
+whenever we ask a question to try to
+improve our question. So the fundamental idea behind this is that
+we may not have as much information
+or underlying thought behind our question as chat GPT has from
+it's training data. So it may be able to
+infer patterns and other questions or words
+or things that are useful when asking questions on this particular topic
+or when trying to request something be done
+on a particular topic. If you think about it, these large language models are trained on patterns
+and language. If we give it, maybe a more general question
+and ask it to refine it, it can use it to knowledge
+of what other things are asked about in the context of the question we've given it, or what other words
+are typically associated with that
+type of question that might help improve
+our question make it more specific or provide additional
+context for other things. So intuitively what we're
+trying to do is we're using a general question and we're tapping into the large
+language models, understanding of patterns and language around that topic of that question in order to create an improved
+version of it. The pattern behind this
+is really quite simple, all we need to do
+is say whenever I ask a question
+or you can give it some scope to this just
+for the next question or for the next three questions
+or whatever you want to do, you say something like
+whenever I ask a question, suggests a better question and ask me if I would like
+to use it instead. This is just a
+really simple idea, we want to always try to
+have the best questions, best prompts to interact with
+the large language model. So we will simply
+tell it whatever I do ask or suggest a refinement. I'm going to show you a
+little tweak to this, that's a really
+helpful tweak to know, which is, we can say whenever
+I ask a question suggests a better question and ask me if I would like
+to use it instead. This is a nice little
+refinement that helpful from a user experience
+perspective because what we're doing now is not
+only are we going to tell the large language
+model to create the question that's better, but rather than requiring us
+to go and cut and paste it or tell the large language model use the question that
+you just generated, we just have it say do you want to use this
+question instead. If we say yes, it
+uses that question, if we say no, it should
+use our original question. So it's a nice little tweak to this pattern that can make
+it even easier to use. Now every time we
+ask a question, the large language model will
+go and try to improve it. So let's look at an
+example of this. I'm going to start off with
+a generic question which is, should I go to
+Vanderbilt University? If we look at this
+question we can see it's really ambiguous and vague, and if somebody was
+asking you this question, should I go to Vanderbilt
+University or as a faculty member or
+somebody was asking me, should I go to
+Vanderbilt University? Where not only is this a big
+decision for the person. But there's really not enough information at this point for me to make a decision. So a better question is going to help give me
+more information about the criteria that you're
+using to decide do these types of what
+are the pros and cons, how do you weigh them and
+decide if it's the right fit. That's exactly what we
+see chat GPT doing. Chat GPT says sure, here's a suggested question. What factors should
+I consider when deciding whether or not to
+attend Vanderbilt University, and how do they align with my personal goals
+and priorities, and then it says would you like to use this
+question instead. This is a really nice pattern because once we've turned it on we can begin asking questions and
+automatically getting better versions of our question. One of the things that's nice about this is
+that also helps us to reflect on what
+we're asking for, and if we see a question
+come back like this, what factors should I consider when deciding
+whether or not to intend at Vanderbilt University
+and how do they align with my personal
+goals and priorities, either will see
+that and see that's a really useful question
+and that's how I really would have phrased
+it if I'd thought about it better or more. But sometimes what we'll also
+see is that the path it's taking this down is not the one we want to
+go and we'll realize there's lots of paths, lots of ways of
+answering the question and we need to give some
+additional context. So not only is this useful
+in many cases of getting a better question but sometimes
+it's helpful to us to see that a question could be interpreted in many
+different ways, there's many different pieces of information that
+may be needed to make an effective decision and
+so by seeing one version of a refined question will identify missing
+pieces of information. So for example, if I really care about computer science
+at Vanderbilt, I might think, I should have mentioned that
+I'm planning on majoring in computer science or
+if the town that I'm going to be and when I got to college is really important
+that I might want to say something about Nashville
+and living in Nashville. We want to make
+sure that you think through the question
+really effectively and this is a pattern
+that can help us really put in on producing
+better questions, learning from the refinements to the questions and also
+using the questions, the refinements to
+understand what's missing in the context that
+we might want to introduce in order to
+get a better output.

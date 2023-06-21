@@ -1,0 +1,136 @@
+Sometimes we need the
+large language model to ask us questions to really guide the process of solving some
+problem that we have or helping us obtain an answer
+or an output that we need. We may not know what are all the steps to
+achieve that goal. What we'd really like to
+do is we'd have to have the large language
+model ask us questions. Whenever we want the
+large language model to ask us questions, the pattern that we can use is called flipped interaction. The idea behind this is rather than we're going to flip
+the interaction rather than us providing questions and the large language
+model providing answers. We're going to flip
+that and we're going to have the
+large language model ask us questions and we're
+going to provide the answers. We can do this in a
+number of different ways. We can do this to play games, we can do this in order to try to reach some goal like
+the large language model keeps asking us
+questions until it gets enough information
+to achieve some goal. There's a variety of different ways that
+you can use this, but this is incredibly
+helpful when you don't necessarily know
+everything that's needed, or if you want to be tested or quizzed on something anywhere where you don't want to
+be in the driver's seat. You want to really be
+helping provide information, but you don't want
+to be formulating the questions or tasks. Let's take a look at an example of the flipped
+interaction pattern. The key to this is we
+start off by asking the large language model
+to ask me questions. Then we give it some topic that we're going
+to have it ask questions on. Ask me questions about
+fitness goals until you have enough information to suggest a strength training
+regimen for me. When you have
+enough information, show me the strength
+training regimen. Ask me the first question. Now this is the basic
+pattern is you say, ask me questions on
+a particular topic, and then it's more helpful
+usually if you give some goal. Why are you asking
+the questions? Are you trying to
+have it quiz you? Are you trying to get a fitness regime like we're in this one and
+have a fitness plan, what is it you're
+trying to achieve? The more information, the more contexts you can give about what you're
+trying to achieve, the better questions
+it be able to ask you. Now, other things you can do, or you can tell it how
+many questions to ask you, how many questions
+to ask at a time. A variety of different things, but one really handy
+thing you can do is end the flipped interaction prompt with ask me the first question. One thing that you often want to do is do it one
+question at a time. Now sometimes you'd
+like to have like 10 questions listed and
+you can ask, answer them. One, here's my answer, two, here's my answer, three, here's my answer and you can
+certainly do it that way. If you want to get
+it all at once and think about it all at once, but a lot of times I like to do it one question at a time. If you want to get that one
+question at a time, behavior, usually a really reliable
+way of doing that is to say, ask me the first question
+at the end of the prompt. We're going to
+generate this, that, this plan we essay ask me the
+first question and it says, great, let's get started. My first question is, what are your specific
+fitness goals? Are you looking to
+build muscle mass, increase strength,
+endurance, performance, or achieve a particular goal? I go on to say I'm
+looking to build explosive power and also prevent patellar tendon apathy from doing jumps on a mountain bike. Now, I don't know if this is a correct pronunciation,
+patellar tendon apathy, but this is what I've looked
+up as I've started to experience some
+pain in my knees at certain times when I've been doing a lot of jumps
+on a mountain bike. I looked it up and this seems
+to be the reason for it. I'm providing that information because I don't
+necessarily know what actually I do know
+because that's part of the reason I
+picked this one is I can fact check it a
+little bit against what I've read on the Internet, but I wanted to generate
+a fitness regime for me. This is something that
+I've actually been doing is figuring out what
+exercises I should do to help out my knee and strengthen so it
+doesn't happen again. Then it ask do you have any current or past
+medical conditions or injuries that it may affect your ability to participate. Additionally, if you've been diagnosed with this or you're looking to prevent proactively. I give it some information. Then it goes on and ask me how many days per week I can
+dedicate and additionally, do you have any access to a
+gym or a fitness equipment? I'm specifying I can
+work out five days per week for 30-45
+minutes at a time. Then we finally get to the
+point where it actually generates a full
+fitness regime for me. Of what I'm going to
+do to work on this. Now what's really interesting is it's gone through it
+and it's taken into account the answers from
+my earlier questions. I know that because I've
+been looking for what are good exercises to help work on this issue with my knee
+that I've been having. These are exactly the types of things that you see recommended, like the goblet squat, the split squat is one that
+you see a lot of times, a lot of different
+types of squats and things are very helpful and these are the types
+of things that I see, but it's also taken the overall context
+that I'm looking for, weight training and
+it's gone and generated the entire weight
+training regime. Now notice at the
+very beginning, I said when you have
+enough information, so I said show me the
+strength training regime. This shows another
+important power of this prompt pattern this
+flipped interaction pattern. Is we give it what
+we're trying to achieve and how much
+it should ask you. Basically we set the
+goal is ask me enough until you have
+enough information to show me the training. It ask questions until
+it thinks it has enough information and
+then generates the output. Now sometimes what
+you'll see when you ask questions to large language
+model is it'll tell you, well, in order to do this, well, I need to get a bunch of
+additional information, or it might generate a generic
+initial plan and then say, but if you provide
+additional details to me, I might also be able
+to do blah blah. What we see here is this is
+getting rid of all that. Let's skip that step of
+getting something generic or being told that there's not quite enough information to
+answer questions for us. Let's just say go
+ahead and ask us the questions that you
+need until you get there. Now, this can also be used for doing other
+things like quizzing and playing games anywhere
+where we want to have knowledge in the
+large language model drive the creation
+of the questions. This is really helpful when it has theoretically
+or been trained on knowledge or patterns in
+language that will be useful in creating the
+questions and are things that we don't possess ourselves. Whenever that's the case, it can probably go in more effectively. Think of questions. If we say, I need a fitness regime and
+patellar tendon apathy, I may not know what
+are the types of questions that you should
+ask somebody who has this. I may not know what are the
+types of exercises that are commonly discussed if
+you have this condition, but it has been trained and seeing patterns of
+language where, when people were discussing
+this particular condition, these are the exercises
+that were discussed. These were the additional
+questions that were asked in order to select exercises and it has access to those patterns from
+its training data, then help it to select good questions to design that
+appropriate training plan. Whenever you need the
+large language model to ask you the questions
+or you can think about a customer service
+example where you're trying to diagnose
+some problem that a customer has or
+automate some response. You need to collect information
+and then take action. The flipped
+interaction pattern is a really powerful prompt
+pattern to use to do that.

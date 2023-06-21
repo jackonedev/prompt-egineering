@@ -1,0 +1,139 @@
+We discussed that the persona
+pattern and how we can use it to give the large
+language model all of this rich information about what it's supposed
+to do and what it's supposed to output with a very little bit of
+work on our part. All we have to say is
+act as and it will know what it's supposed to do and how it's
+supposed to format, and the types of things
+that it's supposed to incorporate into its output. Now sometimes what
+we'd also like to do is we'd like to
+do the same thing, but rather than focusing on who the large language model
+is supposed to act like. We want to add the
+large language model, produce an output for
+a particular persona. This is called the
+audience persona pattern. The idea behind this
+is we want to tell the large language
+model you need to produce an output for
+this audience persona, for this person or thing, so that it can think about
+how to tailor the output. It will use its knowledge
+of the audience to make sure that it
+generates an output that is appropriate for
+that audience. Rather than saying you
+don't do this or do this, or having a whole bunch
+of different rules describing what is and is not
+okay to go into the output. Instead, we say, this is the
+audience of your output. This is the audience persona. With the audience
+persona pattern, we can get a similar type of
+reasoning and ability out of that we got from the
+act as this persona, using the persona pattern, we can get that by saying, here's who you are
+providing the output to. This is the persona of the audience in order to
+get interesting outputs. Let me show you an
+example of this. We're going to start
+with the example of large language model, so which we've been
+studying in this course. We're going to say, explain large language models
+and how they work to me. Assume that I have no
+background in computer science, so we're giving it a
+persona of who I am. We are saying assume that I have no background in
+computer science. That's telling that, who is the persona, who is the audience that I'm
+giving this information to? It says, sure, let's
+start with the basics. I want to call out just
+a couple of things. It starts with a very
+intuitive way of describing. Large language
+model is a type of computer program
+that's designed to understand and generate
+human language. It's a bit like a virtual writer that can understand and create sentences in a way that
+sounds natural to humans. It's describing it. It's not describing it like it would to a
+computer scientist. It's describing it to be something that is accessible
+and approachable to anyone. Language models are used in many applications such
+as speech recognition, machine translation,
+and chatbots. Now let's talk about
+large language models. The word large refers to the
+size of the language model, and it goes on to describe it. It says parameters are like adjustable knobs that the model uses to learn patterns
+in the language. It's describing what a parameter is in an accessible
+way and it goes on and it talks about all the different steps in creating this.
+It did a good job. I said assume that
+I'm not I don't have a background
+in computer science and explain it to me. It made sure in its
+explanation that it had the right information and then presented it at the
+right level for me. Let's go a step further. Let's show you how
+interesting this can get. I can then say, explain large language models
+and how they work to me. Assume that I am
+Christopher Columbus. Notice, now I'm giving it something
+completely different. I don't know how
+you would explain large language models to
+Christopher Columbus. It's going to have
+to use and draw on the information in
+its training data and patterns related to
+Christopher Columbus and history to try
+to figure this out. I'm giving it an
+audience persona that's a tricky one that I wouldn't
+know how to do easily. It says greetings
+Christopher Columbus. As an explorer of 15th
+and 16th centuries, you may not be familiar with the concepts of computer science and
+artificial intelligence. I don't know how well
+this really works, but it's still pretty
+good that it's doing it. I'll do my best to explain it. Imagine that you have
+a magical scribe, a bean, they can read, write, and understand
+many languages. This scribe has spent years
+reading countless books, scrolls, and manuscripts
+from all over the world. It is learned from poets, scholars, and storytellers. The magical scribe has
+a special ability. It can predict what comes
+next in a sentence. For example, if you say to
+describe the ocean is vast, it might respond with mysterious completing your sentence
+in a way that makes sense. You can see how all we did is we said you're going to
+explain the exact same thing, but you're going to
+assume in the first case that I don't have knowledge
+of computer science. Then we say, now you're going to assume that
+I'm Christopher Columbus. It completely changes how it describes large language models and it's actually doing
+a pretty good job. It's saying here
+Christopher Columbus doesn't know what a computer is. Christopher Columbus but
+maybe this concept of a magical scribe and magical scribe could be a concept that could make
+sense to Christopher Columbus. Then he's explaining how large language models
+predict the next word. He's saying the magical
+scribes studied all of these scrolls and poems
+and different things, and learn to can't figure out what is the next
+word in a sentence. Now we're going to use
+that magical scribe and we're going to talk
+to the magical scribes. He's explaining the scribe like Christopher Columbus as
+he's going to understand it. As Christopher Columbus
+will be able to look at the text and
+understand that, I have this large language model and now I've got
+this magical scribe. It makes sense on
+what that means and how that would
+possibly work. Now let's look at
+a third example. We say explain large language models
+and how they work to me. Assume that I am a second
+grader that gets bored easily. Again, we're given a
+totally new persona and we're also
+refining this persona, we're saying I'm a second grader and here's some additional
+details about me. I get bored easily. Now it goes and says,
+I'm going to tell you something super cool
+called a large language model. Imagine having a robot friend who's really good at
+playing word games. This robot can finish
+your sentences, ask, answer questions, and
+even tell you stories. Here's how it works.
+Reading time. The robot friend loves to read, it reads lots and lots of books, websites, and all
+things with words. It's explaining this concept similar to you as it explained
+to Christopher Columbus, it sailed Christopher Columbus near the large
+language model is like a scribe that's read all of these scrolls and poems
+and things like that. Now the large language
+model is explaining to the second grader,
+it's like a robot. The robot loves to read. It reads books,
+websites, and words. Now it's switched up the description based on the
+persona of the audience. Then it goes on to describe
+all of the different aspects. Again, and you could go through and ask it to describe it
+in many different ways. If we wanted to go back
+and we wanted to say, well, let's switch it up from a second grader and let's say, assume that I only accept
+explanations in math. Then we could say something
+completely different. Now it's saying, okay, language model is a probability distribution and it's trying to give a mathematical explanation of what a large
+language model is. We can see that we're getting something completely different. Each time we don't have to
+necessarily think through, well, how would I explain
+this to Christopher Columbus? What would the rules be to describe how that
+output should look? We don't have to
+tell it what the output which should look like, we tell it who the audience is, the persona of the audience, and then we get all of that
+rich capability around it. Just like the persona
+pattern is really useful in tapping into large language
+model capabilities, the audience persona pattern
+is the compliment to it, it is also an equally powerful
+thing that we can use to basically get really
+interesting and powerful output out of large language models.
