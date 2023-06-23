@@ -1,0 +1,10 @@
+Chain of Thought Prompting
+
+
+
+break the problem into steps
+
+explain the reasoning behind the answer
+
+
+https://arxiv.org/abs/2201.11903
