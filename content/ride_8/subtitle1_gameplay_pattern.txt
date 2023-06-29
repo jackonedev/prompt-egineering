@@ -1,0 +1,264 @@
+One thing that I find really
+helpful when I'm trying to learn a new topic or
+improve my skills, I will just have fun
+is to play a game. When we can play games with new knowledge that we're
+trying to acquire, it's usually a fun
+way to really become masters of that knowledge and
+test our ability to use it. Particularly, the games are
+fun and challenging and so one of the patterns that we can use is called the
+gameplay pattern. The idea behind this pattern is we're going to ask ChatGPT or another large
+language model to play a game with us and it's
+going to decide the rules. It's going to be the game
+master in most cases. Now we can give it a variety of different scenarios that can govern what its role
+is in the game. But we're going to
+look at gameplay where the large language model is serving as the game master. It's creating the rules
+and it's driving the game. We can then take a
+game and we can say, I'd like a game on this topic or that has these basic
+rules fill in the rest. One of the things
+that's really nice about this is that
+if we say create a game and we give it some basic structure
+around the game, it can tap into its
+training data in order to populate the
+game with content. If you think about games like
+getting the rules right, obviously takes a
+lot of thought. But then there's a whole
+other challenge for a lot of games of how do you
+create a lot of great content to go with that game and so
+this is a pattern where we can tap into
+the training data from the large language
+model in order to help it populate the content. Now we can also do
+a pretty good job of deciding the rules as well but we're not going to
+necessarily look in these examples that
+complex rule generation. But we are going to look at a really useful example
+of this and I'm going to show you how to create a game to improve your own prompt
+engineering skills. The basic pattern
+of this is to say, "We're going to play a game and we say involving
+or about or whatever, and we want to give
+it the topic." We start off this
+pattern by saying we're going to play a game
+and here's the topic. Then we decide some
+more information about what are the
+rules of the game. In this case, we're going
+to have some simple rules. You're going to give
+me a simple task that can be accomplished
+via prompting you. I'm telling it we're
+going to play a game, you pick task where I could theoretically prompt you in
+order to solve that task. You imagine what
+we're trying to do is have it play a game with
+us where it's going to give us a challenge
+of something we would try to write a
+prompt for and then we're going to write
+the prompt and see if we did a good job and
+then we're going to say your task should all
+have a reasoning or programming component to them although they shouldn't
+require source code. Now the reason I do
+this in this game is, you get more interesting
+questions in my experience if you have some
+logical component to this. Remember, we talked about prompts as a way of programming a large language model
+that everybody can be a programmer and that's what
+we're trying to get at. We don't just want to generate
+a bunch of points about lonely tree standing in
+the middle of the field. We'd like to do more than that. We'd like to have to
+solve problems that have some logical or
+interesting component to them and that's what we're getting at here
+with this problem. We're going to build a game. It's going to challenge
+us to develop different prompts and
+then we're going to try to make these tasks
+that we're solving related to programming
+or logical things. Now next, we go on and we
+give it some more rules. I will try to write a
+prompt to solve the task. You will give me the output of the prompt and tell me how
+well it solved the task. It's going to give us the task
+and you notice we're also, we're adding it,
+ask us questions, so it's going to
+give us the task. The task is going to
+be something that can be solved with a prompt, will write the prompt, and then it will
+run the prompt in order to generate the
+output that that prompt would have output and then it's going to tell us
+how good our prompt was. This is interesting.
+We're actually having it play a game where
+he's pretending to be prompted and then telling us how good
+our prompts are. Ask me questions until
+I tell you to stop. You will ask me a question, wait for my response, and then ask me another question after telling me how I did. Ask me the first question. It says, "Great. Let's get started with
+this first task." Given a list of numbers, determine whether the list contains any duplicate elements. If it does return yes,
+there are duplicates. If it does not, no
+duplicate is found. Now we've got a specific
+prompt engineering task. We're going to have to
+figure out how do we write a prompt where
+we give it a list of numbers and have it return one or the other of these
+things and it's interesting. This is one of the
+challenges that we often face when
+we're dealing with a large language
+model is getting it to generate a precise output. It's giving us
+something where it has a thought component to it
+of like how do we design and tell it about what it
+is we're trying to achieve. But also, it's also got
+an output component. We're trying to match a
+specific output format. Then it says, "Please
+write a prompt for me to solve this task." I'm going to solve this task
+using few shot examples. I give it a list of numbers, I show it some examples. I say basically in
+my prompt essay, here's the numbers 1, 2, 3, and then I have duplicates. I'd say no duplicates found. Then I have numbers
+2, 2, 2 duplicates. Yes, there are duplicates
+and I'm following the output format it told
+us and then I'm going through and giving you a
+series of few-shot examples to solve this and then I prompt it. My final end of my
+prompt is basically duplicates question mark on
+the list I just gave it, which is solving the
+problem that it's asking for or trying
+to see what it says. But basically, I'm asking it, does this list have duplicates? We're hoping that
+what it says is no duplicates found and match this exact format that
+I provided before. It does, it says no
+duplicates found right here. Then what's nice is it
+does the other part of the game that we
+explain your prompt effectively communicate
+the tasks and provided examples of different tasks
+are of different cases. The task was to determine
+whether list of numbers contains any
+duplicate elements and you provide it with examples based on your prompt that
+was able to correctly determined the list does not contain any duplicate elements. Then it goes on and it says, let's move on to the next task. Now it's playing the game, so it's moved onto
+the next task. Given a sentence, count the number of words
+in the sentence, and return the results
+in the format. The sentence contains X words, where X is the number of words. It's giving us an output
+that I have to produce. Notice it's given an
+output now where I have to put the output in a
+different particular format. Before we just had to go and say there's duplicates
+are no duplicates. But now we're having
+to do something a little more complicated. We're having to count words in the sentence and then make sure that count shows up in a
+particular place and the output. This is exactly testing
+our knowledge of prompt engineering and
+some of the patterns and other techniques that
+we've seen in the past. Please write a prompt for
+me to solve this task. I'm going to use
+a pattern called the template pattern to do this. What we say is I'm
+going to give you a template for your output. Number is my place
+holder in all caps. Fill in my placeholder
+with your output. Please preserve the
+overall formatting of my template is, and then I have the sentence
+contains number words. I'm going to solve this problem. Here's my prompt to go and solve this problem and then I say how many words are in
+the following sentence, the cat jumped on the mat. It says the sentence
+contains six words, which we see is exactly the
+format that it was looking for and then it tells us that
+grades us on our prompt. What's really nice about this gameplay example is that from now on you
+can go and use it to test your ability to do prompt engineering
+and you don't have to think of what are prompt engineering tasks
+that I could try out. You can just use this prompt to have it
+generate the content for you. It can think of the ideas
+of the problems for you to solve with prompt engineering and we can see in
+this simple example, it's already gone untested
+some different dimensions, a prompts for us and given us some opportunities to try
+out some different patterns. Then goes on and it gives
+us another interesting one. Given a date in the format, yyyy, mm, dd meaning year, month date determine whether the year is a leap
+year or if not. If it is a leap year
+or the year is yyyy, is a leap year if it's
+not. How do I solve this? I'm going to go through and give it some few-shot examples similar to a dead before. But it's testing my ability to figure out what do I
+do to solve this in this particular case
+and then it gives us the right output that
+2023 is not a leap year. Now what's really nice
+about this is remember, it's supposed to be checking our prompts and testing our
+prompt engineering skills and I want to show you
+something that I didn't even notice until it told
+me and tested me. I said date 2009, 7, 24 so July 24th, 2009 and then in my example, I said leap year
+right here and then I said the year 2004
+is not a leap year. My prompt example
+actually had a mistake because I'm asking if July 24, 2009 is a leap year and
+then in my example, I give it the wrong template. I say the year 2004
+is not a leap year. It should have been the year
+2009 is not a leap year. Then it actually notes
+that right here it says there's a small typo
+in the third example. The year 2004 is
+not a leap year, should be the year 2009
+is not a leap year, but did not affect my ability to understand and
+respond to the task. But it does give me feedback
+on my prompt engineering and also shows me I need to be careful about the
+examples I'm giving it. If I make a mistake in my
+example, in this case, I got lucky and it
+didn't affect things, but it could in future ones. It then goes on. It gives me a new one which I didn't actually go and solve. Given a string of characters, determine whether a
+string is a palindrome. The string is a palindrome and if the string
+is not a palindrome return the string is not a palindrome replaced string
+with the actual string. It's getting a little
+repetitious in here, but we could go in and inject additional ideas to help
+tailor the output even more. You can imagine we
+might want to go in and target our prompt
+engineering a little more. Now, we've been learning a lot of prompt
+patterns in this paper. One way we can adapt
+this game is we can give it a more specific topic about the type of prompts
+we're trying to develop. In this example
+I'm going to take the description of the recipe
+prompt pattern and what's helpful is you can go to our prompt patterns paper
+and you can actually take a little section
+or explanation of those patterns along with
+the name and you can provide it into this game
+as contexts and it does a reasonable job if you provide enough information on the
+pattern and examples of asking you questions that would use that pattern to solve it. In this one I go and I actually modify the
+game and I say, all of your questions
+should revolve around the recipe
+prompt pattern. This pattern
+provides constraints to ultimately output a
+sequence of steps given some partially provided
+ingredients that must be configured in a sequence of steps to achieve a stated goal. The pattern is not
+about cooking per se. Now, I added this
+in here because I knew in my heart that it was going to want to
+ask me cooking questions. That's fine but I've
+done enough of those. But creating a complete
+sequence of steps to achieve a goal given an incomplete
+list of intermediate steps. I really want to use this
+cookie and is obviously a natural way of
+talking about recipes but I don't want it to
+clue in too much on that. I'd rather do some other
+interesting tasks. Then it says your
+goal is to create a prompt that instructs me to generate a sequence of steps for assembling a
+simple wooden bookshelf. The bookshelf has
+four main components. The top and bottom panels, the side patterns and
+the side panels and the shelves you've been provided with the following ingredients. Attach the top panel
+to the side panels insert the shelves into
+the designated slots. Using these intermediate steps
+create a prompt that will result in a complete sequence of steps for assembling
+the bookshelf. Remember the prompt
+should be designed to fill in any missing steps and provide a clear order
+for completing the assembly. Now what's interesting is, is this an interesting problem because it has to have
+an understanding of a bookshelf in its structure and you'd have to go
+and write a prompt that's going to elicit the
+right problem-solving behavior on assembly of a bookshelf. It's a cool little problem. I then I went and I took
+it and I said, all right, well let's use another one of the patterns from the paper. I adapt and I say, we're now going to change
+the topic of your questions. The topic is now the context
+manager pattern and then I'm basically providing
+the intent and contexts from the
+paper and I'm saying, this pattern enables you to specify or remove context
+for conversation. I'm not going to go
+into the details. It did a pretty good job. It asked me a question about the Eiffel Tower and
+its construction. Then I went and I said
+change the topic. Again I said we're going to change the top of the question, the topic is now the
+template pattern. I describe what the
+template pattern is and it actually
+does something that follows what is
+exactly set in here, which is you might want
+to generate a URL. We might get all URLs. We might want to tweak
+this a little bit, but it does a good job
+at then gives me a task. Your goal is to create a
+prompt that instructs me to generate a URL for a product page on an
+e-commerce website. The URL should follow a specific template
+structure and it gives me the structure of
+product id/name, the product id and
+product name are placeholders that needs to be replaced with the actual values. You can see how
+I've got this game. It can test me on
+prompt engineering. I'm learning about
+prompt engineering. It can actually give
+me helpful feedback. It caught on a typo in
+my few short examples, and then I can go and tweak it. I can say, now the topic is, we're going to do a game based on this particular
+prompt pattern. Now we're going to do one
+based on this pattern. What you'll see is you'll get interesting content that will come out of it and challenges of things you can try to prompt. Now they may not all be good. They may not all be interesting. You may get in a rut where they're like getting repetitive. But that is on you then to
+think about what additional information do you go and inject into this game
+to make it fun again, or to make it more variable. I was pretty surprised at the quality of
+questions that I got, and it brought in a
+lot of topics like assembling a bookshelf is not what I would
+have thought about. That's certainly
+an interesting one or when it asked me about information related to the Eiffel Tower and
+its construction. All of these things
+bring fun to the game. Or is it a leap year or not? All of these things are
+interesting ways and all I did is gave it the
+base rules and then the topic area and
+then it pulled in all this information to populate the game with things that
+helped keep me engaged, new content, new ideas to challenge me and
+make me have fun. In this case writing out the
+rules is a lot easier than thinking up all the content for the game which it does
+really effectively.
