@@ -1,0 +1,209 @@
+Getting a large language
+models output in exactly the format that we want can be a
+challenge sometimes. The next pattern that I'm
+going to teach you about is going to help you
+get exactly the format you're looking for and
+tell ChatGPT where you want the information that it's producing
+put into the format. You're basically going to
+give it a template and then ChatGPT is going to go
+and fill in your template. Just like you might do with an assistant where you'd say
+here's the template that I use for creating these
+form letters and here are my different placeholders
+within my template and then your assistant could go in and fill in that template. That's exactly what we can do
+with the template pattern. The idea behind this
+pattern is we would like a specific template
+followed for our output, and we can describe
+that template to ChatGPT and then have it produce all of its output
+using that template. Now, we could do this with
+other approaches like few-shot examples but
+we're going to do this with the template
+pattern in this example. Here's what the template
+pattern looks like. We say, I'm going to give you
+a template for your output. We're queuing the large
+language model that there is a template
+that's going to be in play and it
+needs to follow it. Capitalized words
+are my placeholders, so we're telling it when
+you look at the template, if something is capitalized, that's something
+that you're going to replace with the content
+that you're generating. Fill in my placeholders
+with your output, so there's our queue to it to go and replace the placeholders, and please preserve the overall formatting
+of my template. We don't want ChatGPT to just decide on its own what
+the format should be and ignore everything that we're giving it in
+terms of instructions. Then I say my template is, and I've got this funky
+little template down here, and I'm going to
+talk through it. I have question with three asterisk in front of it and then three
+asterisk following it. Now, what this is
+going to do actually is this is using some
+knowledge of how ChatGPT in the ChatGPT interface formats the information
+that we see, so those three asterisks you
+are basically going to meet. You're going to
+italicize and bold, this is like a heading. It's going to say question
+and it's going to be in italics and it's
+going to be in bold. Then we want it to
+fill in a question, so question which
+is an all caps. Notice we're differentiating between things that are part of my template and things
+that are capitalized, which are things that are placeholders that it's
+going to fill in. Then we're saying
+answer, similarly, it's going to be in
+italics and bold. If you want to figure
+out how this works, this is called Markdown, so basically, ChatGPT is rendering the output
+to you in Markdown. I'm just using this knowledge to help me out a little bit. I'm creating a
+template that includes Markdown and then we're using
+a placeholder for answer. Now, you can guess
+I'm going to have it generate questions
+and answers, this is what's
+going to come next. But right now I'm just telling it what the template looks like. Here's what my
+template is going to be and I'm going to
+ask you to fill it in. Then I tell it, I will give you the data to format
+in the next prompt, create 20 questions
+using my template. Of course, it says
+it's happy to do that. Then what I did is I pasted in, from Wikipedia, an
+article on Paleo-Indians. My son was studying
+Paleo-Indians at school, and so I thought
+it would be fun. Can I generate some questions
+about Paleo-Indians for him and see if he can answer
+them or learn more, and it might be interesting to talk about these questions. I paste that in and then
+what we see is we get output that follows the
+template that we gave it. If you remember, the first thing was question and it
+was not in caps, so this was something we
+wanted it to preserve, and then we had
+question in all caps, and ChatGPT has generated a question about
+the Paleo-Indians, who were the Paleo-Indians? Now, interestingly, it has
+decided to put this in all caps too which actually
+works for the format, I didn't actually mean for it to put it in all
+caps, but it works. Then I had answer which
+was not capitalized, and then I had answer
+was something to be filled in that was an all caps, and it fills in the answers. It's creating questions
+about Paleo-Indians, who were the Paleo-Indians, and then it's filling in
+the answer to the question. But the whole thing is
+structured using my template. I told it generate 20
+of these questions, and so it's basically
+repeated my template 20 different time but
+filling in the content. Now, notice these are really
+powerful placeholders. The placeholder I
+gave it was question, and so it has to
+understand what is the meaning of the
+word question. It looks at and has to
+understand to some degree, and people may argue
+it's not really understanding anything,
+it's doing something else. I'm going to talk about it
+in terms of understanding because I think that's a
+natural way to talk about it. If we later discover it doesn't really understand,
+it doesn't matter, the template pattern is
+a great way of using this and it's easier to talk about it in terms
+of understanding. It's understanding
+the placeholder that it means question, that your question that you
+generate should go here. Then it's understanding answer, answer is where the answer
+to the question should go. It knows, from my prompt, that it's supposed
+to generate 20 of these questions based on
+the content I'm giving it. It's extracting 20 questions about the Paleo-Indians
+and producing the question and the
+answer and formatting it according to my
+template, like we see here. We get a bunch of
+questions that we could go and then have a
+discussion about. There's a first example of it. We can also go and
+take it and say take this a little bit further. I took my colleague Doug Schmidt and I imagined like, well, what if I wanted to go meet Doug Schmidt for the first time and I wanted to try to know something about him
+and have something to talk about and make sure I was versed on his background
+so I can intelligently talk about what he was doing, what he was interested
+in, his background. I just took here
+is webpage here. Now, ChatGPT explains to me, hey, I may not have a version of this web page before 2021. It's fascinating than
+it actually is able to take information
+from a web URL, PSK, little trick, it
+may not be up-to-date. Of course you should if you're going to use
+this before meeting somebody own the information and make sure it's
+actually correct, but it could give you
+a starting point. Then it goes and
+generates 20 questions using the format that I gave it about my colleague,
+Doug Schmidt. Now, looking at the
+questions so far, they seem pretty good. Now if we wanted to do this
+in a more reliable way, we could have pasted in the actual questions or the paste and the
+actual information from his web page
+in order to get information about him and
+generate 20 questions. Now, I'm going to show you another example
+because I talked a little bit about
+these placeholders, that they're not
+just placeholders, there's a real deep
+understanding of the meaning of the placeholders when you're using the
+template pattern. You don't just have
+to think of them as being really easy to match. They can also be
+smarter placeholders. A placeholder that you might
+give to another human being if you wanted to explain to them how to use the
+template you're providing. Let's look at this example. I'm giving it the same preamble
+for the template pattern. I'm still using
+capitalize words. I'm still using Markdown to try to get this formatted
+in a way that I want. This case, it's going to create
+headings wherever I have these hashtags and so what I'm doing is I'm
+saying bio and name. I'm going to paste
+in information about a history of Vanderbilt
+and I would like to get a list of people from
+that history of Vanderbilt. I want the names of the
+people and then I want an executive summary for each person and a full
+description for each person. Now, I'm stating that my executive summary is
+a one-sentence summary. You notice my
+placeholder is more than just go and talk
+about this person. I'm actually putting constraints
+on what I want there. I want one sentence
+that summarizes this person's role
+as described in the information I just gave and then for a full description, I say I want a one
+paragraph summary. Now, you can imagine
+you could go and capitalize a complex
+set of instructions, a one paragraph summary
+that only considers their history as part of
+Vanderbilt before 1800s. Now I haven't actually
+tested that one out, but I suspect it
+would actually work. But the key thing to
+note is I'm giving it more than just a sample match. I'm actually giving it
+a match on summary, go and create a summary here, but I'm also putting
+constraints. What it should be, it has to be a one paragraph summary or
+a one-sentence summary. This is like a power of the template pattern
+is that we can have complex instructions in the
+placeholders that we're actually going and replacing. Now I'm going to take a look. I patched it quite a
+lot of information. This is what we get as a result, is we get the headings as we
+had before with the name. That'll make sense
+but then if we look at the executive summary, it's exactly one sentence. It's not only filling
+in the template, but it's filling it in with the rules that we've
+described in the template. Now we've got a
+one-sentence summary in the executive summary, and then the full
+description we've got a one paragraph description. It goes through this for
+every single person that it extracts from the
+information that I give it. The template pattern
+is a way to help you get the output that
+you want in the format you want and you can use the placeholders in
+really sophisticated ways. They can be something that can semantically
+extract information. I can dump a bunch of
+information in and say, I want to know the people. Then it has to understand who
+are the people in this box, this bucket of information
+that's just been dumped in and has to be able
+to extract the people. I can say, I want a
+summary of each person, but it has to be one paragraph. You can have instructions and constraints on
+these placeholders. You can also have
+sophisticated things. We could have said, for example what is the
+role of each of these people in the history of Vanderbilt and it could
+describe their role. The placeholder can not only
+format the information, it cannot only do simple
+extracting and matching, but it can also do
+sophisticated things, they can follow rules or do things that would be
+really time-consuming for a human-like
+take and extract information that would
+require a human to read through and understand
+and then put it in. We're saying create a one-sentence summary
+of this person. Well, if I was going to
+have an assistant do that, they'd have to go read
+all the information and then make a list of
+all the people for each person I have
+to write first the one-sentence
+summary to try to capture everything
+about that person. Then they have to go write
+a one paragraph summary. That's really fast, really sophisticated intelligence
+that it's using in the key to getting
+the output that we want from it is using
+that template proud. We're saying this
+is the format that you're going to give
+it to me in this is exactly where everything
+goes and here are these really sophisticated rules in the placeholders to help
+you decide what goes in, how it gets formatted,
+what to exclude. It's a really powerful
+pattern for getting information in the
+format that you need and getting the right information
+put into that template.
