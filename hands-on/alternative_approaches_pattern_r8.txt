@@ -1,0 +1,30 @@
+[Input: alternative approaches pattern]
+
+Given the following problem in Python, create a list of alternative implementations for the Result, considering the following alternatives if possible:
+- Alternative 1: built-in function
+- Alternative 2: standard library
+- Alternative 3: user-defined function
+
+If there are more alternatives such as open-source tools, add them. The Result should only return a synthetic prompt of the implementation.
+
+Problem: Create a program that converts temperature units from Celsius to Fahrenheit.
+
+
+[Output: ChatGPT]
+
+Alternative 1: Built-in function
+Result 1: Use the built-in function `round((celsius * 9/5) + 32, 2)` to convert temperature from Celsius to Fahrenheit. This formula calculates the Fahrenheit equivalent of a given temperature in Celsius.
+
+Alternative 2: Standard library
+Result 2: Utilize the `temperature` module from the standard library `tempfile` to convert Celsius to Fahrenheit. Use the `Celsius` class and its `to_fahrenheit()` method to obtain the Fahrenheit value.
+
+Alternative 3: User-defined function
+Result 3: Implement a user-defined function `celsius_to_fahrenheit(celsius)` that takes a temperature in Celsius as input and returns the corresponding temperature in Fahrenheit. Use the formula `fahrenheit = (celsius * 9/5) + 32` within the function to perform the conversion.
+
+Alternative 4: Open-source library (NumPy)
+Result 4: Employ the open-source library NumPy to convert Celsius to Fahrenheit. Use the `np.multiply()` and `np.add()` functions to perform the necessary calculations. For example, `fahrenheit = np.add(np.multiply(celsius, 9/5), 32)`.
+
+Alternative 5: Open-source library (Pandas)
+Result 5: Utilize the open-source library Pandas to convert Celsius to Fahrenheit. Create a Pandas DataFrame with the Celsius values and use the `.apply()` method along with a lambda function to apply the conversion formula to each Celsius value.
+
+These are just a few examples of alternative implementations for the given problem. Depending on the specific requirements and constraints of your project, other alternatives might be more suitable.

@@ -1,0 +1,51 @@
+[Input: meta language creation pattern]
+
+Let's say we are working on a project management tool in Python. We'll start by defining our meta language notation and its meanings.
+
+In our meta language notation:
+- A task will be represented by a unique identifier enclosed in square brackets, such as [Task1].
+- Task dependencies will be denoted by a colon followed by the identifiers of dependent tasks, separated by commas, such as [Task2]: [Task1, Task3].
+
+Example:
+[Task1]
+[Task2]: [Task1]
+[Task3]: [Task1]
+[Task4]: [Task2, Task3]
+
+Meaning:
+In this example, we have four tasks: Task1, Task2, Task3, and Task4. Task2 and Task3 depend on Task1, and Task4 depends on both Task2 and Task3.
+
+Case:
+Write a convey project structure for a TODO WebApp.
+
+
+[Output ChatGPT]
+
+Sure! Here's an example of a project structure for a TODO WebApp using the meta language notation you provided:
+
+[Create HTML structure]
+[Style CSS]
+[Implement JavaScript functionality]: [Create HTML structure, Style CSS]
+[Set up server]: [Implement JavaScript functionality]
+[Connect to database]: [Set up server]
+[Handle user authentication]: [Set up server, Connect to database]
+[Display tasks]: [Set up server, Connect to database]
+[Add new task]: [Set up server, Connect to database]
+[Update task]: [Set up server, Connect to database]
+[Delete task]: [Set up server, Connect to database]
+
+Meaning:
+In this example, we have several tasks representing the steps involved in creating a TODO WebApp. Each task is identified by a unique identifier enclosed in square brackets.
+
+- The first task, "Create HTML structure," involves creating the basic HTML structure for the web application.
+- The second task, "Style CSS," is dependent on the completion of the "Create HTML structure" task and involves styling the web application using CSS.
+- The third task, "Implement JavaScript functionality," is dependent on the completion of both the "Create HTML structure" and "Style CSS" tasks. It involves implementing the interactive functionality of the web application using JavaScript.
+- The fourth task, "Set up server," is dependent on the completion of the "Implement JavaScript functionality" task and involves setting up the server-side infrastructure for the web application.
+- The fifth task, "Connect to database," is dependent on the completion of the "Set up server" task and involves establishing a connection to a database for storing and retrieving task data.
+- The sixth task, "Handle user authentication," is dependent on the completion of both the "Set up server" and "Connect to database" tasks. It involves implementing user authentication functionality, ensuring secure access to the application.
+- The seventh task, "Display tasks," is dependent on the completion of both the "Set up server" and "Connect to database" tasks. It involves retrieving tasks from the database and displaying them to the user.
+- The eighth task, "Add new task," is dependent on the completion of both the "Set up server" and "Connect to database" tasks. It involves adding new tasks to the database through the web application.
+- The ninth task, "Update task," is dependent on the completion of both the "Set up server" and "Connect to database" tasks. It involves updating existing tasks in the database through the web application.
+- The tenth task, "Delete task," is dependent on the completion of both the "Set up server" and "Connect to database" tasks. It involves deleting tasks from the database through the web application.
+
+This project structure represents the high-level tasks required to build a TODO WebApp and their dependencies, allowing for a logical progression of development.
