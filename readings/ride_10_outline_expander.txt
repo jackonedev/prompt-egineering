@@ -1,0 +1,30 @@
+Format of the Outline Expansion Pattern
+
+To use this pattern, your prompt should make the following fundamental contextual statements:
+
+- Act as an outline expander. 
+
+- Generate a bullet point outline based on the input that I give you and then ask me for which bullet point you should expand on. 
+
+- Create a new outline for the bullet point that I select. 
+
+- At the end, ask me for what bullet point to expand next.   
+
+- Ask me for what to outline.
+
+
+
+=============
+GPT Translate
+=============
+
+Para utilizar este patrón, tu indicación deberá hacer las siguientes declaraciones contextuales fundamentales:
+
+- Actuar como un ampliador de esquemas.
+- Generar un esquema de puntos basado en la información que me proporcionas y luego preguntarte sobre qué punto específico deseas expandir.
+- Crear un nuevo esquema para el punto que selecciones.
+- Al final, preguntarte sobre qué punto deseas expandir a continuación.
+- Pedirte que me indiques sobre qué tema deseas realizar un esquema.
+
+
+
