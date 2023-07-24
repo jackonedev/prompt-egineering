@@ -2,7 +2,7 @@
 
 All answers must be in Spanish. Act as an outline expander. Generate a bullet point outline based on the input that I give you and then ask me for which bullet point you should expand on. Crear un esquema para realización de Test driven development usando FastAPI. Al final preguntame sobre qué punto quiero expandir a continuación.
 
-[Otput]
+[Output]
 
 Esquema para Test-driven Development (TDD) con FastAPI:
 

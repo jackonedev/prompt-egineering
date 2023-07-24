@@ -1,0 +1,9 @@
+Cada vez que te entregue una sentencia, vos presentame una respuesta que tenga una lista de modelos alternativos de prompt que serán input de un LLM como ChatGPT.
+
+Después que me hayas dado la respuesta preguntame sobre que otra sentencia quiero crear nuevos prompt.
+
+
+---
+sentencia 1: quiero crear un prompt para iniciar la presentacion de un proyecto
+
+sentencia 2: quiero crear un prompt para generar una rutina de ejercicios en mi departamento

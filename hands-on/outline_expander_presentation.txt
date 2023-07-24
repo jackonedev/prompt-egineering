@@ -1,0 +1,123 @@
+[Input]
+
+Act as an outline expander. Generate a bullet point outline based on the input that I give you and then ask me for which bullet point you should expand on. Crear un esquema para realización de Test driven development usando FastAPI. Al final preguntame sobre qué punto quiero expandir a continuación. All answer must be in English.
+
+[Output]
+
+Outline for Test Driven Development using FastAPI:
+
+1. Introduction to Test-Driven Development (TDD)
+   - Explanation of TDD principles and benefits
+   - Importance of writing tests before code implementation
+
+2. Overview of FastAPI
+   - Brief introduction to FastAPI framework
+   - Key features and advantages for building APIs
+
+3. Setting Up the Project
+   - Installing FastAPI and required dependencies
+   - Creating a new project directory
+
+4. Writing the First Test
+   - Identifying the first functionality to be implemented
+   - Writing a test case for the identified functionality
+
+5. Running Tests and Initial Failure
+   - Executing the test suite
+   - Verifying the test failure as expected
+
+6. Implementing the Feature
+   - Writing the minimal code to make the test pass
+   - Refactoring the code if necessary
+
+7. Running Tests and Verifying Success
+   - Executing the test suite again
+   - Ensuring the test passes successfully
+
+8. Expanding Test Coverage
+   - Identifying the next functionality to implement
+   - Writing test cases for the new functionality
+
+9. Repeating the Process
+   - Implementing the new feature and making the tests pass
+   - Iterating through the process for subsequent functionalities
+
+10. Handling Edge Cases and Errors
+   - Writing additional tests to cover edge cases and potential errors
+   - Implementing error handling and ensuring tests pass
+
+11. Using Test Fixtures and Mocking
+   - Introduction to fixtures and their role in testing
+   - Implementing mocks for external dependencies
+
+12. Continuous Integration and Code Coverage
+   - Integrating the project with CI/CD pipelines
+   - Monitoring and improving code coverage metrics
+
+13. Best Practices and Tips
+   - Sharing TDD best practices and common pitfalls to avoid
+
+Please let me know which bullet point you would like to expand on further.
+
+
+[Input]
+Best Practices and Tips
+
+[Output]
+Best Practices and Tips for Test-Driven Development (TDD):
+
+1. Keep Tests Simple and Isolated:
+   - Write simple and focused test cases that cover specific functionality.
+   - Avoid creating complex test cases that make it difficult to identify issues.
+
+2. Red-Green-Refactor Cycle:
+   - Follow the red-green-refactor cycle strictly.
+   - Start by writing a failing test (red), then implement the minimal code to make it pass (green), and finally refactor the code for better design while keeping tests passing.
+
+3. Test Public Interfaces:
+   - Test the public interfaces of functions, classes, and APIs.
+   - Avoid testing private methods directly; focus on testing the externally visible behavior.
+
+4. Test Edge Cases and Boundaries:
+   - Identify and include edge cases and boundary conditions in your test suite.
+   - This helps ensure that your code handles all possible scenarios effectively.
+
+5. Avoid Testing Framework Code:
+   - Avoid writing tests for the testing framework itself or any third-party libraries.
+   - Focus solely on testing your application's code.
+
+6. Run Tests Frequently:
+   - Run your test suite regularly during development to catch issues early.
+   - This practice ensures that all changes do not introduce unexpected failures.
+
+7. Test Driven Bug Fixes:
+   - If you discover a bug, first write a test that reproduces the issue.
+   - Then fix the bug, ensuring that the test passes afterward to prevent regressions.
+
+8. Refactor with Confidence:
+   - Refactor your code with confidence, knowing that your test suite will catch any regressions.
+   - Maintain high test coverage to provide a safety net during refactoring.
+
+9. Use Descriptive Test Names:
+   - Use descriptive and meaningful names for your test cases.
+   - Clear test names make it easier to understand the purpose of each test.
+
+10. Continuous Integration and Automation:
+    - Integrate your test suite into a Continuous Integration (CI) system.
+    - Automate test execution to ensure tests run consistently across environments.
+
+11. Team Collaboration:
+    - Involve the entire development team in writing and maintaining tests.
+    - Encourage open communication and sharing of testing best practices.
+
+12. Test Data Management:
+    - Manage test data effectively, ensuring tests are repeatable and reliable.
+    - Consider using fixtures or test data factories for setting up test scenarios.
+
+13. Monitor Test Coverage:
+    - Keep track of test coverage metrics to identify areas lacking proper testing.
+    - Aim for high code coverage but focus on testing critical and complex parts of the codebase.
+
+Remember, the primary goal of TDD is not only to produce tests but also to design better code. Following these best practices will lead to well-tested and maintainable code, reducing the likelihood of bugs and making it easier for future development and enhancements.
+
+Is there a specific best practice or tip you would like me to expand on further?

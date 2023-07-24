@@ -1,0 +1,17 @@
+Continue Learning About Prompt Engineering
+
+A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT
+https://arxiv.org/abs/2302.11382
+
+Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+https://arxiv.org/abs/2201.11903
+
+ReAct: Synergizing Reasoning and Acting in Language Models
+https://arxiv.org/abs/2210.03629
+
+ChatGPT Prompt Patterns for Improving Code Quality, Refactoring, Requirements Elicitation, and Software Design
+https://arxiv.org/abs/2303.07839
+
+
+Follow Jules White's Research
+https://www.magnum.io/people/jules.html
